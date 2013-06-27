@@ -1,10 +1,10 @@
 filetype off
-call pathogen#runtime_append_all_bundles()
+call pathogen#infect()
 filetype plugin indent on
 syntax on
 set nocompatible
 set modelines=0
-:colo molokai
+":colo molokai
 set guifont=Inconsolata\ 12
 set tabstop=4
 set shiftwidth=4
