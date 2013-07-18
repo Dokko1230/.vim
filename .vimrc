@@ -1,7 +1,7 @@
+execute pathogen#infect()
 filetype off
-call pathogen#infect()
-filetype plugin indent on
 syntax on
+filetype plugin indent on
 set nocompatible
 set modelines=0
 ":colo molokai
@@ -12,6 +12,7 @@ set softtabstop=4
 set expandtab
 set smartindent
 set noswapfile
+set nopaste
 
 set encoding=utf-8
 set scrolloff=3
