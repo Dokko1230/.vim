@@ -1,22 +1,21 @@
 execute pathogen#infect()
 filetype off
 syntax on
-filetype plugin indent on
 set nocompatible
+filetype plugin indent on
+set autoindent
 set modelines=0
 ":colo molokai
 set guifont=Inconsolata\ 12
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 set expandtab
-set smartindent
 set noswapfile
 set nopaste
 
 set encoding=utf-8
 set scrolloff=3
-set autoindent
 set showmode
 set showcmd
 set hidden
