@@ -4,7 +4,7 @@ filetype plugin indent on
 syntax on
 set nocompatible
 set modelines=0
-:colo molokai
+:colo solarized
 set guifont=Inconsolata\ 12
 set tabstop=4
 set shiftwidth=4
