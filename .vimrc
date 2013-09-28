@@ -5,7 +5,7 @@ set nocompatible
 filetype plugin indent on
 set autoindent
 set modelines=0
-":colo molokai
+:colo solarized
 set guifont=Inconsolata\ 12
 set tabstop=2
 set shiftwidth=2
