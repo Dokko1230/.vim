@@ -1,11 +1,14 @@
 execute pathogen#infect()
 filetype off
 syntax on
-set nocompatible
 filetype plugin indent on
+filetype off
+syntax enable
+set background=dark
+colorscheme solarized
+set nocompatible
 set autoindent
 set modelines=0
-:colo solarized
 set guifont=Inconsolata\ 12
 set tabstop=2
 set shiftwidth=2
