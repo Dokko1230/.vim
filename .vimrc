@@ -1,7 +1,37 @@
-execute pathogen#infect()
+set nocompatible              " be iMproved
+filetype off                  " required!
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+" required! 
+Bundle 'gmarik/vundle'
+
+" My bundles here:
+"
+" original repos on GitHub
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-haml'
+Bundle 'scrooloose/nerdtree'
+Bundle 'scrooloose/syntastic'
+Bundle 'kien/ctrlp.vim'
+Bundle 'Lokaltog/vim-easymotion'
+Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+Bundle 'tpope/vim-rails.git'
+" vim-scripts repos
+Bundle 'L9'
+Bundle 'FuzzyFinder'
+" non-GitHub repos
+Bundle 'git://git.wincent.com/command-t.git'
+
+filetype plugin indent on     " required!
+
+" Syntastic checkers
+let g:syntastic_javascript_checkers = ['jslint']
+
 filetype off
 syntax on
-filetype plugin indent on
 filetype off
 syntax enable
 set background=dark
@@ -33,6 +63,7 @@ set laststatus=2
 set relativenumber
 
 let mapleader = ","
+let g:ctrlp_map = '<c-p>'
 
 nnoremap / /\v
 vnoremap / /\v
