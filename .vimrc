@@ -1,31 +1,33 @@
 set nocompatible              " be iMproved
 filetype off                  " required!
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+
+call vundle#begin()
 
 " let Vundle manage Vundle
 " required! 
-Bundle 'gmarik/vundle'
+Plugin  'gmarik/vundle'
 
 " My bundles here:
 "
 " original repos on GitHub
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-haml'
-Bundle 'Valloric/YouCompleteMe'
-Bundle 'scrooloose/nerdtree'
-Bundle 'scrooloose/syntastic'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'kien/ctrlp.vim'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
-Bundle 'tpope/vim-rails.git'
+Plugin  'tpope/vim-fugitive'
+Plugin  'tpope/vim-haml'
+Plugin  'scrooloose/nerdtree'
+Plugin  'scrooloose/syntastic'
+Plugin  'scrooloose/nerdcommenter'
+Plugin  'kien/ctrlp.vim'
+Plugin  'Lokaltog/vim-easymotion'
+Plugin  'rstacruz/sparkup', {'rtp': 'vim/'}
+Plugin  'tpope/vim-rails.git'
 " vim-scripts repos
-Bundle 'L9'
-Bundle 'FuzzyFinder'
+Plugin  'L9'
+Plugin  'FuzzyFinder'
 " non-GitHub repos
-Bundle 'git://git.wincent.com/command-t.git'
+Plugin  'git://git.wincent.com/command-t.git'
+
+call vundle#end()
 
 filetype plugin indent on     " required!
 
